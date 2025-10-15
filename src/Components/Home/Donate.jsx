@@ -25,7 +25,7 @@ export default function PixlaKalamSection() {
             drive sustainability via the Pixla Green Mission’s tree planting and environmental campaigns.
           </p>
 
-          <button className="mt-6 bg-green-600 hover:bg-[#0a4f34] text-white font-medium px-5 py-2 flex items-center gap-1 transition-all duration-300">
+          <button className="mt-6 bg-green-700 hover:bg-[#0a4f34] text-white font-medium px-5 py-2 flex items-center gap-1 transition-all duration-300">
             Donate Now
             <ArrowUpRight className="w-4 h-4" />
           </button>

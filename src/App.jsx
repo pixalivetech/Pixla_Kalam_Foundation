@@ -7,6 +7,8 @@ import Key from "./Components/Home/Key"
 import Green from "./Components/Home/Greenmission"
 import Donate from "./Components/Home/Donate"
 import Testimonials from "./Components/Home/Testimonials"
+import Gallery from "./Components/Home/Gallery"
+import Volunteers from "./Components/Home/Volunteers"
 
 const App = () => {
   return (
@@ -17,8 +19,10 @@ const App = () => {
       <Join/>
       <Key/>
       <Green/>
+      <Volunteers/>
       <Donate/>
       <Testimonials/>
+      <Gallery/>
     </div>
   )
 }

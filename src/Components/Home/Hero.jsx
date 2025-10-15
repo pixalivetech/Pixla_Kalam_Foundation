@@ -39,7 +39,7 @@ export default function HeroSection() {
             Environmental Action
           </p>
           {/* Join Now Button */}
-          <button className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2 transition-all mt-10">
+          <button className="flex items-center gap-2 bg-green-700 hover:bg-green-700 text-white px-5 py-2 transition-all mt-10">
             Join now <ArrowUpRight size={18} />
           </button>
 

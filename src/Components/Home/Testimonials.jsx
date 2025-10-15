@@ -45,9 +45,9 @@ export default function TestimonialSection() {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Left Section */}
         <div>
-          <p className="text-md font-medium text-black">Testimonial</p>
+          <p className="inline-block text-sm md:text-lg text-gray-500 font-medium mb-4 cursor-pointer">Testimonial</p>
           <h2 className="text-3xl md:text-5xl font-bold mt-3 mb-8 leading-snug text-black">
-            What Our <br /> Students Saying <br /> About Us
+           Pixla Success <br /> Stories
           </h2>
           <br />
           <br />
@@ -55,7 +55,7 @@ export default function TestimonialSection() {
           <br />
           <br />
           <br />
-          <button className="flex items-center gap-2 bg-yellow-400 text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition">
+          <button className="flex items-center gap-2 bg-green-700 text-white px-6 py-2  text-sm font-medium hover:bg-gray-800 transition">
             Show All <ArrowRight className="w-4 h-4" />
           </button>
         </div>
@@ -63,7 +63,7 @@ export default function TestimonialSection() {
         {/* Right Section */}
         <div className="relative border-l border-gray-400">
           {/* Quote Mark */}
-          <div className="absolute top-24 left-10 text-[#C5AA05]-600 font-serif text-[150px] leading-none opacity-20 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-24 left-10 text-green-600 font-serif text-[150px] leading-none opacity-20 transform -translate-x-1/2 -translate-y-1/2">
             “
           </div>
 
@@ -98,7 +98,7 @@ export default function TestimonialSection() {
                   key={index}
                   className={`h-2 rounded-full transition-all ${
                     currentIndex === index
-                      ? "w-6 bg-[#C5AA05]"
+                      ? "w-6 bg-green-700"
                       : "w-2 bg-gray-400"
                   }`}
                 ></span>

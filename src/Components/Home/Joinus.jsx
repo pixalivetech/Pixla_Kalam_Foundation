@@ -21,7 +21,7 @@ export default function PixlaKalamSection() {
             opportunity
           </p>
 
-          <button className="mt-4 bg-green-600 hover:bg-[#0a4f34] text-white font-medium px-5 py-2 flex items-center gap-1 transition-all duration-300">
+          <button className="mt-4 bg-green-700 hover:bg-[#0a4f34] text-white font-medium px-5 py-2 flex items-center gap-1 transition-all duration-300">
             Join Us
             <ArrowUpRight className="w-4 h-4" />
           </button>

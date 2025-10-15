@@ -48,7 +48,7 @@ export default function WhoWeAreSection() {
 
               <a
                 href="/about"
-                className="inline-flex items-center gap-3 bg-green-600 text-white 
+                className="inline-flex items-center gap-3 bg-green-700 text-white 
                            px-4 py-2 text-base font-medium shadow-sm 
                            whitespace-nowrap hover:bg-gray-800 transition duration-300"
               >
