@@ -61,7 +61,7 @@ export default function TestimonialSection() {
         </div>
 
         {/* Right Section */}
-        <div className="relative border-l border-gray-400">
+        <div className="relative border-l-2 border-gray-400">
           {/* Quote Mark */}
           <div className="absolute top-24 left-10 text-green-600 font-serif text-[150px] leading-none opacity-20 transform -translate-x-1/2 -translate-y-1/2">
             “

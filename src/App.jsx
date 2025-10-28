@@ -9,6 +9,8 @@ import Donate from "./Components/Home/Donate"
 import Testimonials from "./Components/Home/Testimonials"
 import Gallery from "./Components/Home/Gallery"
 import Volunteers from "./Components/Home/Volunteers"
+import Promises from "./Components/Home/Promises"
+import Footer from "./Components/Home/Footer"
 
 const App = () => {
   return (
@@ -19,10 +21,12 @@ const App = () => {
       <Join/>
       <Key/>
       <Green/>
+      <Promises/>
       <Volunteers/>
       <Donate/>
       <Testimonials/>
       <Gallery/>
+      <Footer/>
     </div>
   )
 }
