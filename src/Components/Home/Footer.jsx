@@ -50,30 +50,37 @@ export default function ContactSection() {
 
       {/* Button */}
       <div className="mt-8 md:mt-25">
-        <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-black px-4 py-2 text-sm font-medium rounded-sm hover:bg-gray-200 transition">
-          Send Us a Message
-          <FaArrowUpRightFromSquare className="text-xs" />
-        </button>
+        <button
+  onClick={() => {
+    window.open(
+      "https://wa.me/918778584566?text=Hi!%20I’d%20like%20to%20know%20more%20about%20Pixalive%20Gold%20Network.",
+      "_blank"
+    );
+  }}
+  className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-black px-4 py-2 text-sm font-medium rounded-sm hover:bg-gray-200 transition"
+>
+  Send Us a Message
+  <FaArrowUpRightFromSquare className="text-xs" />
+</button>
+
       </div>
 
       {/* Social Links */}
       <div className="flex flex-wrap gap-6 md:gap-30 text-sm md:text-lg text-gray-400 mt-8 md:mt-20">
-        <a href="#" className="hover:text-white flex items-center gap-1">
-          Facebook <FaArrowUpRightFromSquare className="text-xs" />
-        </a>
-        <a href="#" className="hover:text-white flex items-center gap-1">
+        <a href="https://www.instagram.com/pixla_group/" className="hover:text-white flex items-center gap-1">
           Instagram <FaArrowUpRightFromSquare className="text-xs" />
         </a>
-        <a href="#" className="hover:text-white flex items-center gap-1">
+        <a href="https://www.linkedin.com/company/pixla-gold-network" className="hover:text-white flex items-center gap-1">
           LinkedIn <FaArrowUpRightFromSquare className="text-xs" />
-        </a>
-        <a href="#" className="hover:text-white flex items-center gap-1">
-          Twitter/X <FaArrowUpRightFromSquare className="text-xs" />
         </a>
       </div>
 
       {/* Footer Year */}
-      <div className="text-right text-2xl md:text-4xl font-semibold mt-6 md:-mt-10">@2025</div>
+     <div className="text-right text-2xl md:text-4xl font-semibold -mt-8 md:-mt-10">
+  @2025
+</div>
+
+
     </section>
   );
 }

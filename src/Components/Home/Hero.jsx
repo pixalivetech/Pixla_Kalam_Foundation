@@ -34,9 +34,18 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <button className="flex gap-2 w-full md:w-auto text-center bg-white text-black text-sm px-4 py-2 shadow hover:bg-gray-200 transition">
-            Let’s talk <ArrowUpRight size={16}/>
-          </button>
+          <button
+  onClick={() => {
+    window.open(
+      "https://wa.me/918778584566?text=Hi!%20I’m%20interested%20in%20learning%20more%20about%20Pixla%20Kalam%20Foundation.",
+      "_blank"
+    );
+  }}
+  className="flex gap-2 w-full md:w-auto items-center justify-center text-center bg-white text-black text-sm px-4 py-2 shadow hover:bg-gray-200 transition"
+>
+  Let’s talk <ArrowUpRight size={16} />
+</button>
+
         </div>
 
         <br />
