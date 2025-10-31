@@ -6,7 +6,9 @@ export default function ContactSection() {
   return (
     <section className="bg-black text-white px-6 md:px-24 py-16">
       {/* Heading */}
-      <h1 className="text-4xl sm:text-5xl md:text-9xl font-light mb-12">GET IN TOUCH</h1>
+      <h1 className="text-4xl sm:text-5xl md:text-9xl font-light mb-12">
+        GET IN TOUCH
+      </h1>
 
       {/* Content Section */}
       <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1.6fr_1fr] gap-8 md:gap-30 items-start">
@@ -26,14 +28,21 @@ export default function ContactSection() {
         <div className="mb-6 md:mb-0">
           <h3 className="font-semibold text-lg sm:text-xl mb-3">CONTACT/</h3>
           <div className="leading-relaxed mb-4">
-            <p className="text-gray-400 text-sm sm:text-lg">contact@pixlakalamfoundation.org</p>
-            <p className="text-gray-400 text-sm sm:text-lg mb-4">+91 87785 84566</p>
+            <p className="text-gray-400 text-sm sm:text-lg">
+              contact@pixlakalamfoundation.org
+            </p>
+            <p className="text-gray-400 text-sm sm:text-lg mb-4">
+              +91 87785 84566
+            </p>
           </div>
           <h3 className="font-semibold text-lg sm:text-xl mb-3">Address</h3>
           <p className="text-gray-400 text-sm sm:text-lg leading-snug">
-            Opposite St. Joseph Polytechnic College,<br />
-            Soolamalai Village Bus Stop,<br />
-            Krishnagiri District,<br />
+            Opposite St. Joseph Polytechnic College,
+            <br />
+            Soolamalai Village Bus Stop,
+            <br />
+            Krishnagiri District,
+            <br />
             Tamil Nadu, 635108, India
           </p>
         </div>
@@ -48,39 +57,53 @@ export default function ContactSection() {
         </div>
       </div>
 
-      {/* Button */}
-      <div className="mt-8 md:mt-25">
+      {/* Button + Links Row */}
+      <div className="mt-8 md:mt-25 flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* Button */}
         <button
-  onClick={() => {
-    window.open(
-      "https://wa.me/918778584566?text=Hi!%20I’d%20like%20to%20know%20more%20about%20Pixalive%20Gold%20Network.",
-      "_blank"
-    );
-  }}
-  className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-black px-4 py-2 text-sm font-medium rounded-sm hover:bg-gray-200 transition"
->
-  Send Us a Message
-  <FaArrowUpRightFromSquare className="text-xs" />
-</button>
+          onClick={() => {
+            window.open(
+              "https://wa.me/918778584566?text=Hi!%20I’d%20like%20to%20know%20more%20about%20Pixalive%20Gold%20Network.",
+              "_blank"
+            );
+          }}
+          className="flex items-center justify-center gap-2 bg-white text-black px-4 py-2 text-sm font-medium rounded-sm hover:bg-gray-200 transition w-full sm:w-auto"
+        >
+          Send Us a Message
+          <FaArrowUpRightFromSquare className="text-xs" />
+        </button>
 
+        {/* Terms & Privacy */}
+        <div className="flex items-center gap-6 text-xs sm:text-sm text-gray-400">
+          <a href="/terms" className="hover:text-white transition">
+            Terms & Conditions
+          </a>
+          <a href="/privacy" className="hover:text-white transition">
+            Privacy Policy
+          </a>
+        </div>
       </div>
 
       {/* Social Links */}
       <div className="flex flex-wrap gap-6 md:gap-30 text-sm md:text-lg text-gray-400 mt-8 md:mt-20">
-        <a href="https://www.instagram.com/pixla_group/" className="hover:text-white flex items-center gap-1">
+        <a
+          href="https://www.instagram.com/pixla_group/"
+          className="hover:text-white flex items-center gap-1"
+        >
           Instagram <FaArrowUpRightFromSquare className="text-xs" />
         </a>
-        <a href="https://www.linkedin.com/company/pixla-gold-network" className="hover:text-white flex items-center gap-1">
+        <a
+          href="https://www.linkedin.com/company/pixla-gold-network"
+          className="hover:text-white flex items-center gap-1"
+        >
           LinkedIn <FaArrowUpRightFromSquare className="text-xs" />
         </a>
       </div>
 
       {/* Footer Year */}
-     <div className="text-right text-2xl md:text-4xl font-semibold -mt-8 md:-mt-10">
-  @2025
-</div>
-
-
+      <div className="text-right text-2xl md:text-4xl font-semibold -mt-8 md:-mt-10">
+        @2025
+      </div>
     </section>
   );
 }

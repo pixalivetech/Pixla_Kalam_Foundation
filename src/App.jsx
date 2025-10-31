@@ -1,34 +1,25 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./Components/Home/Hero"
-import About from "./Components/Home/About"
-import Story from "./Components/Home/Story"
-import Join from "./Components/Home/Joinus"
-import Key from "./Components/Home/Key"
-import Green from "./Components/Home/Greenmission"
-import Donate from "./Components/Home/Donate"
-import Testimonials from "./Components/Home/Testimonials"
-import Gallery from "./Components/Home/Gallery"
-import Volunteers from "./Components/Home/Volunteers"
-import Promises from "./Components/Home/Promises"
+import Home from "./Pages/Home";
+import TermsAndConditions from "./Components/Home/Terms&Condition"; 
+import PrivacyPolicy from "./Components/Home/Privacypolicy"
 import Footer from "./Components/Home/Footer"
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Hero/>
-      <About/>
-      <Story/>
-      <Join/>
-      <Key/>
-      <Green/>
-      <Promises/>
-      <Volunteers/>
-      <Donate/>
-      <Testimonials/>
-      <Gallery/>
+      <Routes>
+        {/* Home Page */}
+        <Route path="/" element={<Home />} />
+        {/* Terms Page (optional, if you created it) */}
+        <Route path="/terms" element={<TermsAndConditions />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+      </Routes>
       <Footer/>
-    </div>
-  )
-}
+    </Router>
+  );
+};
 
-export default App
+export default App;
