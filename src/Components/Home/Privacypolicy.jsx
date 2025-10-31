@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
         </h1>
         <div className="w-64 h-1 bg-green-600 mx-auto rounded-full mb-6"></div>
         <p className="text-sm text-gray-600">
-          <strong>Effective Date:</strong> October 30, 2025 <br />
+    
           <strong>Operated by:</strong> Pixla Kalam Foundation (under Tripalive.Me Technology Pvt Ltd) <br />
           <strong>Registered Office:</strong> Bengaluru, Karnataka, India
         </p>
